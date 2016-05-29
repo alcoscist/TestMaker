@@ -1,1 +1,1 @@
-json.extract! @test_case, :id, :action, :expectedResult, :TestType, :created_at, :updated_at
+json.extract! @test_case, :id, :objName, :name, :action, :expectedResult, :testType, :created_at, :updated_at

@@ -1,4 +1,4 @@
 json.array!(@test_cases) do |test_case|
-  json.extract! test_case, :id, :action, :expectedResult, :TestType
+  json.extract! test_case, :id, :objName, :name, :action, :expectedResult, :testType
   json.url test_case_url(test_case, format: :json)
 end

@@ -69,6 +69,6 @@ class TestCasesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def test_case_params
-      params.require(:test_case).permit(:action, :expectedResult, :TestType)
+      params.require(:test_case).permit(:objName, :name, :action, :expectedResult, :testType)
     end
 end

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Page Objects</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Tagname</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @page_objects.each do |page_object| %>
+      <tr>
+        <td><%= page_object.name %></td>
+        <td><%= page_object.tagName %></td>
+        <td><%= link_to 'Show', page_object %></td>
+        <td><%= link_to 'Edit', edit_page_object_path(page_object) %></td>
+        <td><%= link_to 'Destroy', page_object, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Page object', new_page_object_path %>

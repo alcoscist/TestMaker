@@ -11,7 +11,20 @@
     </div>
   <% end %>
 
-  <div class="field">
+
+
+    <div class="field">
+      <%= f.label :objName %><br>
+      <%= f.text_area :objName %>
+    </div>
+
+    <div class="field">
+      <%= f.label :name %><br>
+      <%= f.text_area :name %>
+    </div>
+
+
+    <div class="field">
     <%= f.label :action %><br>
     <%= f.text_area :action %>
   </div>
@@ -20,8 +33,8 @@
     <%= f.text_area :expectedResult %>
   </div>
   <div class="field">
-    <%= f.label :TestType %><br>
-    <%= f.text_area :TestType %>
+    <%= f.label :testType %><br>
+    <%= f.text_area :testType %>
   </div>
   <div class="actions">
     <%= f.submit %>
